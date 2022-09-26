@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.stopwatch {
+    font-size: 40px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.controls button {
+    flex: 1;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
