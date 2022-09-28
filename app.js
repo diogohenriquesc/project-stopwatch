@@ -34,12 +34,9 @@ function pause() {
 
 function stopwatch() {
 	time.setMilliseconds(time.getMilliseconds() + 1);
-	let m = addTwoDigits(time.getMinutes());
-	let s = addTwoDigits(time.getSeconds());
+	let m = time.getMinutes().toString().padStart(2, '0');
+	let s = time.getSeconds().toString().padStart(2, '0');
 	let ms = time.getMilliseconds().toString().padStart(3, '0');
 	clock.innerHTML = `${m}:${s}:${ms}`;
 }
 
-function addTwoDigits(n) {
-	return (n < 10 ? '0' : '') + n;
-}
